@@ -1,0 +1,257 @@
+/// Tellor Bounties SCSS ////
+@import "../../App.scss";
+
+.Bounties {
+  @include flexcolumn;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.Bounties .contentSection {
+  padding: 50px 190px 60px 190px;
+}
+.Bounties .two_btns {
+  width: 710px !important;
+}
+.Bounties .contentTxt {
+  max-width: 100%;
+  width: 100%;
+}
+
+.bountiesAvailable {
+  width: 100%;
+}
+.bountiesAvailable h3 {
+  color: #333333;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  margin: 0 0 20px 0 !important;
+}
+
+.headerGroundRules {
+  @include leftrow;
+  align-items: flex-start;
+  width: 100%;
+  p {
+    flex: 1;
+    padding-right: 6%;
+  }
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.groundRules {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 1% 4% 0 4%;
+  width: 92%;
+  border-left: 2px solid $tellor-grey1;
+}
+.bountieExpanded {
+  @include leftcolumn;
+  background: white;
+  margin: -1px 0 -1px 0;
+  border-bottom: 2px solid $darkestgrey;
+  padding: 15px 0px 40px 30px;
+}
+
+.bountieExpanded .firstRow {
+  @include leftrow;
+  width: 100%;
+  margin: 0 0 15px 0;
+  > div:first-child {
+    flex: 1;
+  }
+}
+
+.smallestMargin {
+  margin: 0 0 12px 0;
+}
+.bold {
+  font-weight: bold;
+}
+.panelRowsSpecial {
+  p {
+    font-size: 1rem;
+    font-weight: 300;
+    margin: 10px 0 20px 0;
+  }
+}
+.panelRows {
+  h3 {
+    margin: 0;
+  }
+  p {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+}
+.panelClose {
+  margin-bottom: -3px;
+  margin-top: 15px;
+  font-size: 1rem;
+  font-weight: 300;
+  text-decoration: underline;
+  width: fit-content;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    text-decoration: none;
+  }
+}
+
+//Styles for ClaimModal.js
+.claimForm {
+  width: 100%;
+}
+#claimModalButton {
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    text-decoration: none;
+  }
+}
+.Claim {
+  @include centeredcolumn;
+  padding: 0;
+}
+.nondisplay {
+  display: none;
+}
+.CF__Error {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 5px;
+}
+.CF__Error h5 {
+  color: red;
+}
+.Claim__Form {
+  @include centeredcolumn;
+  width: 100%;
+  font-family: "Roboto";
+  &::placeholder {
+    font-family: "Roboto";
+  }
+}
+.CF__Double__Container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 1% 0;
+}
+.CF__Input__Container {
+  flex: 0.48;
+  display: flex;
+  flex-direction: column;
+  label {
+    margin-right: 1%;
+  }
+  input {
+    border: 1px solid rgba(#999999,0.4);
+    width: 100%;
+    height: 42px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 0;
+    padding-left: 10px;
+
+    &:focus {
+      outline: none;
+      border: 1px solid $darkestgrey;
+    }
+  }
+}
+.CF__Long__Input {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 1.5%;
+
+  input {
+    border: 1px solid rgba(#999999,0.4);
+    width: 100%;
+    height: 42px;
+    border-radius: 0;
+    padding-left: 10px;
+
+    &:focus {
+      outline: none;
+      border: 1px solid $darkestgrey;
+    }
+  }
+  textarea {
+    border: 1px solid rgba(#999999,0.4);
+    width: 100%;
+    height: 100px;
+    border-radius: 0;
+    padding: 10px;
+    font-family: "Roboto";
+    resize: none;
+
+    &:focus {
+      outline: none;
+      border: 1px solid $darkestgrey;
+    }
+  }
+}
+.Claim__Button {
+  margin-top: 5%;
+  justify-self: end;
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    text-decoration: none;
+  }
+  &:hover:disabled {
+    cursor: not-allowed;
+  }
+}
+
+
+
+
+
+/* QUERIES */
+
+@media only screen and (max-width: 810px) {
+  .headerGroundRules {
+    @include leftcolumn;
+    align-items: flex-start;
+    width: 100%;
+    p {
+      margin: 0 0 20px 0 !important;
+      padding: 0;
+    }
+    button {
+      margin: 0 0 20px 0 !important;
+    }
+  }
+  .ant-table {
+    @include fourteenpxfont;
+  }
+  .bountieExpanded .firstRow {
+    @include leftcolumn;
+    width: 100%;
+    margin: 0 0 15px 0;
+    > div:first-child {
+      flex: 1;
+      margin: 0 0 20px 0;
+    }
+  }
+
+  .Bounties .contentSection {
+    padding: 20px 50px 50px 50px;
+  }
+
+}
+
+@media only screen and (min-width: 1500px) {
+}

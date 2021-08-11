@@ -1,0 +1,48 @@
+{
+  "name": "tellor-website",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": ".",
+  "dependencies": {
+    "@ant-design/icons": "^4.6.2",
+    "@n8tb1t/use-scroll-position": "^1.0.46",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "antd": "^4.6.4",
+    "axios": "^0.20.0",
+    "node-sass": "^4.14.1",
+    "react": "^16.13.1",
+    "react-burger-menu": "^2.7.1",
+    "react-dom": "^16.13.1",
+    "react-responsive": "^8.1.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.3",
+    "react-twitter-embed": "^3.0.3",
+    "sass": "^1.36.0",
+    "svg-react-loader": "^0.4.6",
+    "web-vitals": "^2.1.0",
+    "yup": "^0.32.9"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
