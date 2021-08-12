@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Button } from "antd";
 import * as yup from "yup";
 import formSchema from "./ClaimFormSchema.js";
+require("dotenv").config();
 
 function ClaimModal({ jobForm }) {
   let initialFormValues = {
