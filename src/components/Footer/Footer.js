@@ -22,7 +22,7 @@ function Footer() {
       <div className="links">
         <p>Links</p>
         <a href="/jobs" alt="Tellor jobs">
-          Jobs at tellor
+          Jobs at tellor forever
         </a>
         <a
           href="http://docs.tellor.io"
