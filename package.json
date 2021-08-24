@@ -2,6 +2,10 @@
   "name": "tellor-website",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "npm": "6.14.14",
+    "node": "14.17.4"
+  },
   "homepage": ".",
   "dependencies": {
     "@ant-design/icons": "^4.6.2",
