@@ -130,12 +130,12 @@ function Bounties() {
         compare: (a, b) => a.tributes - b.tributes,
         multiple: 1,
       },
-      // render: tributes => tributes+" TRB",
+      // render: tributes => tributes+" USD",
       render: (tributes) => {
         if (tributes === "Various") {
           return tributes;
         } else {
-          return tributes + " TRB";
+          return tributes + " USD";
         }
       },
     },
