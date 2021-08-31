@@ -40,7 +40,7 @@ function Bounties() {
   const dataHelper = (unformattedData) => {
     let dataArray = [];
     let randomBountyObj = {
-      key: 100,
+      key: 1000,
       title: "Suggest A Bounty",
       jobType: "Various",
       tributes: "Various",
@@ -219,7 +219,7 @@ function Bounties() {
                       activeKey={claimerPanels}
                     >
                       <Panel header="Bracket panel" key={i}>
-                        <ClaimModal jobForm={jobForm} />
+                        <ClaimModal jobForm={jobForm} record={record} />
                       </Panel>
                     </Collapse>
                   </div>
@@ -262,7 +262,7 @@ function Bounties() {
                       activeKey={claimerPanels}
                     >
                       <Panel header="Bracket panel" key={i}>
-                        <ClaimModal jobForm={jobForm} />
+                        <ClaimModal jobForm={jobForm} record={record} />
                       </Panel>
                     </Collapse>
                   </div>
