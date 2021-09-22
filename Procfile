@@ -1,2 +1,2 @@
-web: bin/boot
-bash: bin/boot
+web: /bin/boot
+bash: /bin/boot
