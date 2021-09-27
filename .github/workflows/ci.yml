@@ -1,0 +1,44 @@
+name: CI
+
+on: 
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:      
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: Set outputs
+      id: vars
+      run: echo "::set-output name=sha_short::$(git rev-parse --short HEAD)"
+    - name: Check outputs
+      run: echo ${{ steps.vars.outputs.sha_short }}
+    - name: Install SSH Key
+      uses: shimataro/ssh-key-action@v2
+      with:
+        key: ${{ secrets.SSH_PRIVATE_KEY }} 
+        known_hosts: 'placeholder'
+    - name: Adding Known Hosts
+      run: ssh-keyscan -H ${{ secrets.SSH_SERVER_IP }} >> ~/.ssh/known_hosts
+    - name: Deploy code
+      run: rsync -avz . ${{ secrets.SSH_USER }}@${{ secrets.SSH_SERVER_IP }}:/tmp/build-${{ steps.vars.outputs.sha_short }}/
+    - name: executing remote ssh commands using password
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.SSH_SERVER_IP }}
+        username: ${{ secrets.SSH_USER }}
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
+        port: ${{ secrets.SSH_PORT }}
+        script: |
+          cd /tmp/build-${{ steps.vars.outputs.sha_short }}/
+          docker build -t "tellor-website:${{ steps.vars.outputs.sha_short }}" /tmp/build-${{ steps.vars.outputs.sha_short }}/
+          docker kill $(docker ps -q)
+          docker rm $(docker ps -a -q)
+          docker run -p "5000:5000" -d "tellor-website:${{ steps.vars.outputs.sha_short }}"
+          rm -rf /tmp/build-${{ steps.vars.outputs.sha_short }}/
+
+
