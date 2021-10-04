@@ -15,7 +15,7 @@ function Footer() {
             <h1>tellor</h1>
           </div>
         </Link>
-        <p>&copy; 2020 tellor.io</p>
+        <p>&copy; 2021 tellor.io</p>
         <Socials />
       </div>
       <div className="flexer"></div>
