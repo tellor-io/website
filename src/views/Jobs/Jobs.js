@@ -9,37 +9,32 @@ const Jobs = () => {
 
   const activeJobs = [
     {
-      title: "Golang Developer",
-      blurb: "Are you interested in building bleeding edge products in the crypto/web3 space?  Are you excited by the prospect of growing with a small tight-knit team? Tellor is looking for a developer to join the team and help us maintain and develop the backbone of our oracle protocol - Telliot (https://github.com/tellor-io/telliot). The ideal candidate for this role at Tellor will be a Golang developer of moderate experience level who's ready to leave the rat race and take the leap into the crypto industry.",
-      responsibilities: [
-        "Maintaining and further development of the Telliot"
+      title: "Front-end Developer",
+      blurb: "Do you want to build cutting edge websites and front-ends that serve as the face of a cryptocurrency? Come help us design and build the user and investor experience of Tellor.   You’ll be working to support and display multiple products on many different chains as Tellor continues to innovate and build for the crypto ecosystem. This is an opportunity to work on a quickly growing crypto project in a key position with an awesome team.",
+      skills: [
+        "React / Redux",
+        "web3",
+        "Javascript",
+        "UI / UX"
       ],
-      qualifications: [
-        "Prior experience in web3 is a plus but not at all required.  We want someone that knows Go well but is excited and willing to learn the rest. ",
-        "1+ years experience developing in Golang",
-        "Loves documentation",
-        "Works well with a team",
-        "Flexible and willing to step in where needed"
+      bonus: [
+        "Jest / testing",
+        "the Graph",
+        "AWS/ hosting",
+        "Solidity"
       ]
     },
     {
-      title: "Solidity Developer",
-      blurb: "Are you interested in building bleeding edge products in the crypto/web3 space?  Are you excited by the prospect of growing with a small tight-knit team? Tellor is growing and looking for another Solidity developer to fill out the team.  We are open to both junior and more experienced candidates.  Ultimately, we are looking for someone passionate and excited about web3 and willing to learn and grow along with us as we make Tellor the best oracle in crypto.",
-      responsibilities: [
-        "Help develop the next iteration of the Tellor - Tellor X.",
-        "Assist user integrations",
-        "Assist/lead layer 2 contract deployments"
-      ],
-      qualifications: [
-        "1+ years experience developing in Solidity",
-        "Loves documentation",
-        "Works well with a team",
-        "Flexible and willing to step in where needed",
-        "comfortable providing technical support to users",
-        "Able to automate and monitor tasks"
+      title: "Administrative Assistant / HR",
+      blurb: "Are you organized, professional, and want to get into a cutting edge industry? Tellor is looking for an individual to help with personnel, basic accounting, and administrative tasks.  We’re a fast growing start up in an even faster growing crypto industry, so if you think this sounds like fun, reach out!",
+      skills: [
+        "Proficient in Excel",
+        "High organizational skills",
+        "Basic Accounting / payroll familiarity",
+        "Event organization",
+        "Scheduling"
       ]
-    },
-
+    }
   ]
 
   window.scrollTo(0, 0);
