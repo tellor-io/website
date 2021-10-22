@@ -96,7 +96,7 @@ function Howitworks() {
       <section className="ContractSection">
         <img src={contract} alt="contract-visual from infographic" />
         <h2>Tellor’s main contract arranges the query queue, provides the PoW to the miners and determines the medians: it is the heart of the network around which everything revolves.</h2>
-        <a href="https://github.com/tellor-io/TellorCore/tree/master/contracts" alt="link to documentation" target="_blank" rel="noopener noreferrer">
+        <a href="https://github.com/tellor-io/tellor3/tree/master/contracts" alt="link to documentation" target="_blank" rel="noopener noreferrer">
             <Button
               shape="round"
               size="large"
