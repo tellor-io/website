@@ -71,15 +71,15 @@ function BountiesHeader({ rawData }) {
                 <h3>How do I get started?</h3>
                 <p>
                   Scroll down to see available bounties, and see if anything
-                  tickles your fancy and then shoot me an email to find out
+                  tickles your fancy and then shoot us an email to find out
                   more.
                   <br />
-                  If it says yes, it's "available"! Then you can email me and
-                  I'll say it's yours. If you want to help someone else working
-                  on one not available, then also ask and I'll see if its a fit.
+                  If it says yes, it's "available"! Then you can email us and
+                  we'll say it's yours. If you want to help someone else working
+                  on one not available, then also ask and we'll see if it's a fit.
                   <br />
                   If you're building something else that's open source and fits
-                  with our mission...tell me to add it and lets keep building
+                  with our mission...tell us to add it and let's keep building
                   this out.
                 </p>
               </div>
@@ -92,11 +92,11 @@ function BountiesHeader({ rawData }) {
                   development need.
                   <br />
                   The rewards should be seen as just bonuses for helping to
-                  build out Tellor, not nessecarily a salary or a fair market
+                  build out Tellor, not necessarily a salary or a fair market
                   value for the work.
                   <br />
                   It's also not some anonymous thing. If you want the reward,
-                  you have to let me know you're working on it. Hell, let
+                  you have to let us know you're working on it. Hell, let
                   discord and the Tellor channel know you're on it. We want you
                   to work on it alone, with people, and with the team.
                 </p>
